@@ -1,38 +1,254 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พิมพ์ชนก</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f13596;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 50px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phimchanok | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน น.ส.พิมพ์ชนก วรรณบุบผา👋</h1>
-        <p>สวัสดีค่ะ! ฉันชื่อ <strong>พิมพ์ชนก (pimchanok)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese </p>
-        <p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
-        <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของผม</a>
-    </div>
+  <header>
+    <nav>
+      <div class="logo">PHIMCHANOK</div>
+      <div class="menu">
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#activities">ACTIVITIES</a>
+        <a href="#gallery">GALLERY</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="small-title">DEK70 • ACADEMIC PORTFOLIO</p>
+
+        <h1>
+          สวัสดีค่ะ<br>
+          ฉันชื่อ <span>พิมพ์ชนก</span>
+        </h1>
+
+        <p class="intro">
+          แฟ้มสะสมผลงานที่รวบรวมเรื่องราว
+          ประสบการณ์ กิจกรรม และความสนใจ
+          ด้านภาษาจีนและการพัฒนาตนเอง
+        </p>
+
+        <a href="#about" class="button">เข้าสู่ Portfolio →</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/photo9.jpeg" alt="Phimchanok">
+      </div>
+    </section>
+
+
+    <!-- FOREWORD -->
+    <section class="foreword">
+      <p class="section-label">01 / FOREWORD</p>
+      <h2>คำนำ</h2>
+
+      <p>
+        แฟ้มสะสมผลงานเล่มนี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+        ความสามารถ กิจกรรม และประสบการณ์ต่าง ๆ
+        ที่ได้เรียนรู้ตลอดช่วงการศึกษา
+      </p>
+
+      <p>
+        ดิฉันมีความสนใจในภาษาจีนและการเรียนรู้วัฒนธรรมจีน
+        รวมถึงการร้องเพลง การเต้น และการทำงานร่วมกับผู้อื่น
+        หวังว่า Portfolio นี้จะช่วยสะท้อนตัวตน
+        ความตั้งใจ และการพัฒนาของดิฉันได้เป็นอย่างดี
+      </p>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div>
+        <p class="section-label">02 / ABOUT ME</p>
+        <h2>เกี่ยวกับฉัน</h2>
+      </div>
+
+      <div class="info">
+        <p><b>ชื่อ</b> พิมพ์ชนก วรรณบุบผา</p>
+        <p><b>ชื่อเล่น</b> อิง</p>
+        <p><b>วันเกิด</b> 3 กุมภาพันธ์ 2552</p>
+        <p><b>โรงเรียน</b> บ้านบึงอุตสาหกรรมนุเคราะห์</p>
+        <p><b>ระดับชั้น</b> ม.6/4</p>
+        <p><b>ความสนใจ</b> ภาษาจีน • ร้องเพลง • วาดรูป</p>
+      </div>
+    </section>
+
+
+    <!-- CHINESE -->
+    <section class="chinese">
+      <div class="chinese-photo">
+        <img src="images/photo8.jpeg" alt="Chinese activity">
+      </div>
+
+      <div class="chinese-text">
+        <p class="section-label">03 / MY INTEREST</p>
+        <h2>ภาษาจีน</h2>
+
+        <p>
+          ฉันเริ่มเรียนภาษาจีนและมีความสนใจในการเรียนรู้
+          ภาษา วัฒนธรรม และการสื่อสารภาษาจีน
+          ซึ่งเป็นสิ่งที่อยากพัฒนาต่อไปในอนาคต
+        </p>
+
+        <div class="score">
+          <div>
+            <strong>HSK 3</strong>
+            <span>258 / 300</span>
+          </div>
+
+          <div>
+            <strong>YCT 4</strong>
+            <span>198 / 200</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <p class="section-label">04 / SKILLS</p>
+      <h2>ทักษะและความสามารถ</h2>
+
+      <div class="skill-grid">
+
+        <div class="skill-card">
+          <span>01</span>
+          <h3>ภาษาจีน</h3>
+          <p>สามารถสื่อสารและเรียนรู้ภาษาจีนในระดับพื้นฐานถึงกลาง</p>
+        </div>
+
+        <div class="skill-card">
+          <span>02</span>
+          <h3>การแสดง</h3>
+          <p>มีประสบการณ์ในการร่วมกิจกรรมและการแสดงของโรงเรียน</p>
+        </div>
+
+        <div class="skill-card">
+          <span>03</span>
+          <h3>การร้องเพลง</h3>
+          <p>ชื่นชอบการร้องเพลงและเคยร่วมกิจกรรมร้องเพลงจีน</p>
+        </div>
+
+        <div class="skill-card">
+          <span>04</span>
+          <h3>การทำงานเป็นทีม</h3>
+          <p>สามารถร่วมมือกับผู้อื่นและรับผิดชอบงานที่ได้รับมอบหมาย</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="activities">
+      <p class="section-label">05 / ACTIVITIES</p>
+      <h2>กิจกรรมและประสบการณ์</h2>
+
+      <div class="activity-list">
+
+        <div class="activity">
+          <span>01</span>
+          <div>
+            <h3>ทัศนศึกษาเยาวราช</h3>
+            <p>2569</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <span>02</span>
+          <div>
+            <h3>การสอบ HSK</h3>
+            <p>2569</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <span>03</span>
+          <div>
+            <h3>ร้องเพลงจีนในงานโรงเรียน</h3>
+            <p>2569</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <span>04</span>
+          <div>
+            <h3>แข่งขันระบำจีน</h3>
+            <p>2568</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <span>05</span>
+          <div>
+            <h3>เต้นประกอบเพลงจีน</h3>
+            <p>2568</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <span>06</span>
+          <div>
+            <h3>ค่ายภาษาจีน</h3>
+            <p>2568</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <span>07</span>
+          <div>
+            <h3>ทำอาหารจีน</h3>
+            <p>2568</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <p class="section-label">06 / GALLERY</p>
+      <h2>ภาพกิจกรรม</h2>
+
+      <div class="gallery-grid">
+        <img src="images/photo1.jpeg" alt="">
+        <img src="images/photo2.jpeg" alt="">
+        <img src="images/photo3.jpeg" alt="">
+        <img src="images/photo4.jpeg" alt="">
+        <img src="images/photo5.jpeg" alt="">
+        <img src="images/photo6.jpeg" alt="">
+        <img src="images/photo7.jpeg" alt="">
+        <img src="images/photo8.jpeg" alt="">
+      </div>
+    </section>
+
+
+    <!-- END -->
+    <section class="end">
+      <p>THANK YOU FOR VISITING</p>
+      <h2>Thank You ♡</h2>
+      <p>Phimchanok Wannabubpha • DEK70</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 PHIMCHANOK WANNABUBPHA</p>
+  </footer>
 
 </body>
 </html>
