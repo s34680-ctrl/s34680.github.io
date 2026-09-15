@@ -1,115 +1,77 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pimchanok Portfolio</title>
-
-    <!-- เชื่อมกับ CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>พิมพ์ชนก</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f13596;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 50px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 { color: #2c3e50; }
+        p { font-size: 18px; line-height: 1.6; }
+    </style>
 </head>
-
 <body>
 
-    <!-- =========================
-         HEADER / แถบด้านบน
-    ========================== -->
-    <header class="navbar">
+    <div class="card">
+        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน น.ส.พิมพ์ชนก วรรณบุบผา👋</h1>
+        <p>สวัสดีค่ะ! ฉันชื่อ <strong>พิมพ์ชนก (pimchanok)</strong></p>
+        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese </p>
+        <p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
+        <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของผม</a>
+    </div>
 
-        <!-- ✏️ แก้ชื่อเว็บไซต์ตรงนี้ -->
-        <a href="index.html" class="logo">
-            Pimchanok Portfolio
-        </a>
+</body>
+</html>
 
-        <nav>
-            <!-- ปุ่มหน้าแรก -->
-            <a href="index.html" class="nav-btn active">
-                หน้าแรก
-            </a>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แฟ้มสะสมงานของฉัน น.ส.พิมพ์ชนก วรรณบุบผา</title>
+<style>
+body { font-family: sans-serif; background-color: #f4f7f6; text-align: center; padding: 30px; }
+.container { max-width: 800px; margin: 0 auto; }
+.project-card { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
+.btn { display: inline-block; background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+</style>
+</head>
+<body>
 
-            <!-- ปุ่มข้อมูลส่วนตัว -->
-            <a href="portfolio.html" class="nav-btn">
-                ถัดไป→
-            </a>
-            
-        </a>
-        </nav>
+<div class="container">
+<h1>📁 แฟ้มสะสมงาน น.ส.พิมพ์ชนก วรรณบุบผา (Portfolio)</h1>
+<p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
 
-    </header>
+<!-- กล่องผลงานชิ้นที่ 1 -->
+<div class="project-card">
+<h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ</h3>
+<p>รายละเอียดชิ้นงาน: เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง</p>
+</div>
 
+<!-- กล่องผลงานชิ้นที่ 2 -->
+<div class="project-card">
+<h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
+<p>รายละเอียดชิ้นงาน: เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
+</div>
 
-    <!-- =========================
-         หน้าแรก
-         มีเฉพาะส่วนนี้
-    ========================== -->
-    <main class="home">
-
-        <div class="home-content">
-
-            <div class="home-text">
-
-                <p class="mini-title">
-                    MY PORTFOLIO
-                </p>
-
-                <!-- ✏️ แก้ชื่อของตัวเองตรงนี้ -->
-                <h1>
-                    Hello, I'm<br>
-                    <span>Pimchanok</span>
-                </h1>
-
-                <!-- ✏️ แก้ข้อความแนะนำตัวสั้น ๆ ตรงนี้ -->
-                <p class="home-description">
-                    ยินดีต้อนรับเข้าสู่ Portfolio ของฉัน
-                    เว็บไซต์ที่รวบรวมตัวตน ความสามารถ
-                    ประสบการณ์ และเรื่องราวต่าง ๆ
-                </p>
-
-                <!-- ปุ่มไปหน้า Portfolio -->
-                <a href="portfolio.html" class="main-button">
-                    รู้จักฉัน
-                    <span>→</span>
-                </a>
-
-            </div>
-
-
-            <!-- =========================
-                 รูปโปรไฟล์วงกลม
-            ========================== -->
-            <div class="profile-area">
-
-                <div class="profile-circle">
-
-                    <!-- ✏️ เปลี่ยนชื่อรูปตรงนี้ถ้ารูปชื่ออื่น -->
-                    <img src="images/profile.jpeg"
-                         alt="Pimchanok">
-
-                </div>
-
-                <!-- ตกแต่งวงกลมเล็ก ๆ -->
-                <div class="floating-dot dot-one"></div>
-                <div class="floating-dot dot-two"></div>
-                <div class="floating-dot dot-three"></div>
-
-            </div>
-
-        </div>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="home-footer">
-        <p>
-            © 2026 Pimchanok Portfolio
-        </p>
-    </footer>
-
+<!-- ปุ่มกดกลับหน้าแรก -->
+<a href="index.html" class="btn">🔙 กลับหน้าแรก</a>
+  <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของผม</a>
+</div>
 
 </body>
 </html>
