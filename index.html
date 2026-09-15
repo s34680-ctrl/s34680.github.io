@@ -1,4 +1,52 @@
 <!-- =========================
+         แถบเมนู
+    ========================= -->
+    <nav>
+    <div class="logo">🧸 My Portfolio</div>
+
+    <ul class="menu">
+        <li><a href="index.html">🏠 หน้าแรก</a></li>
+        <li><a href="me.html">🌷 เกี่ยวกับฉัน</a></li>
+        <li><a href="activities.html">🎀 กิจกรรม</a></li>
+        <li><a href="skills.html">🏆 ผลงาน</a></li>
+        <li><a href="skills.html">📞 ติดต่อฉัน</a></li>
+    </ul>
+</nav>
+
+<style>
+nav {
+    background: white;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #df8fb1;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #72b2c9;
+}
+
+.menu a:hover {
+    color: #df8fb1;
+}
+</style>  
+<!-- =========================
      หน้าแรก : Welcome Profile
 ========================= -->
 <section id="home" class="home">
@@ -287,109 +335,3 @@
     }
 
 </style>
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | หน้าแรก</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- =========================
-     แถบเมนูด้านบน
-========================= -->
-<nav class="navbar">
-
-    <div class="logo">
-        🌿 My Portfolio 🐒
-    </div>
-
-    <ul class="menu">
-        <li>
-            <a href="index.html">🏠 หน้าแรก</a>
-        </li>
-
-        <li>
-            <a href="about.html">👩🏻‍🎓 เกี่ยวกับฉัน</a>
-        </li>
-
-        <li>
-            <a href="#">🎓 การศึกษา</a>
-        </li>
-
-        <li>
-            <a href="#">✨ กิจกรรม</a>
-        </li>
-
-        <li>
-            <a href="#">💌 ติดต่อฉัน</a>
-        </li>
-    </ul>
-
-</nav>
-
-
-<!-- =========================
-     หน้าแรก
-========================= -->
-<section class="home">
-
-    <!-- ตกแต่ง -->
-    <div class="decoration top">
-        ♡ 🩷 🐒 ♡ 🌿 ♡ 🐒 🩷 ♡
-    </div>
-
-    <div class="home-box">
-
-        <!-- รูปโปรไฟล์ -->
-        <div class="profile-box">
-
-            <div class="profile-circle">
-                <img src="profile.jpg" alt="รูปโปรไฟล์">
-            </div>
-
-            <div class="mini-decor">
-                🩷 🌿 🐒
-            </div>
-
-        </div>
-
-
-        <!-- ข้อความ -->
-        <div class="home-content">
-
-            <p class="welcome">
-                🌿 WELCOME TO MY PORTFOLIO 🌿
-            </p>
-
-            <h1>
-                ยินดีต้อนรับสู่<br>
-                <span>เว็บไซต์ Portfolio</span><br>
-                ของฉัน 🩷
-            </h1>
-
-            <p class="description">
-                เรามาทำความรู้จักกัน<br>
-                ให้มากขึ้นกันเถอะ! 🐒🌿
-            </p>
-
-            <!-- ปุ่มไปหน้าเกี่ยวกับฉัน -->
-            <a href="about.html" class="main-button">
-                💚 ทำความรู้จักฉัน
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="decoration bottom">
-        🐒 ♡ 🩷 ♡ 🌿 ♡ 🐒 ♡ 🩷
-    </div>
-
-</section>
-
-</body>
-</html>
