@@ -1,120 +1,114 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pimchanok Portfolio</title>
-
-    <!-- เชื่อมกับ CSS -->
+    <title>ข้อมูลส่วนตัว | Pimchanok</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         HEADER / แถบด้านบน
-    ========================== -->
-    <header class="navbar">
+<header>
+    <a href="index.html" class="logo">Pimchanok Portfolio</a>
 
-        <!-- ✏️ แก้ชื่อเว็บไซต์ตรงนี้ -->
-        <a href="index.html" class="logo">
-            Pimchanok Portfolio
-        </a>
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="portfolio.html" class="active">ข้อมูลส่วนตัว</a>
+        <a href="activities.html">กิจกรรม</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+</header>
 
-        <nav>
-            <!-- ปุ่มหน้าแรก -->
-            <a href="index.html" class="nav-btn active">
-                หน้าแรก
-            </a>
+<main class="page">
 
-            <!-- ปุ่มข้อมูลส่วนตัว -->
-            <a href="portfolio.html" class="nav-btn">
-                ถัดไป→
-            </a>
-            
-        </a>
-        </nav>
+    <div class="page-title">
+        <p>GET TO KNOW ME</p>
+        <h1>ข้อมูลส่วนตัว</h1>
+    </div>
 
-    </header>
+    <section class="about-box">
 
+        <div class="about-photo">
+            <img src="images/profile.jpeg" alt="Profile">
+        </div>
 
-    <!-- =========================
-         หน้าแรก
-         มีเฉพาะส่วนนี้
-    ========================== -->
-    <main class="home">
+        <div class="about-content">
+            <h2>เกี่ยวกับฉัน</h2>
 
-        <div class="home-content">
+            <p>
+                สวัสดีค่ะ ฉันชื่อ <b>พิมพ์ชนก วรรณบุบผา</b>
+                ชื่อเล่น อิง ปัจจุบันกำลังศึกษาอยู่ระดับมัธยมศึกษาตอนปลาย
+                ฉันมีความสนใจด้านภาษาจีน การร้องเพลง การวาดรูป
+                และการเข้าร่วมกิจกรรมต่าง ๆ
+            </p>
 
-            <div class="home-text">
+            <div class="info">
+                <p><b>ชื่อ:</b> พิมพ์ชนก วรรณบุบผา</p>
+                <p><b>ชื่อเล่น:</b> อิง</p>
+                <p><b>โรงเรียน:</b> บ้านบึงอุตสาหกรรมนุเคราะห์</p>
+                <p><b>ระดับชั้น:</b> ม.6/4</p>
+                <p><b>เป้าหมาย:</b> ศึกษาต่อในระดับมหาวิทยาลัย</p>
+            </div>
+        </div>
 
-                <p class="mini-title">
-                    MY PORTFOLIO
-                </p>
+    </section>
 
-                <!-- ✏️ แก้ชื่อของตัวเองตรงนี้ -->
-                <h1>
-                    Hello, I'm<br>
-                    <span>Pimchanok</span>
-                </h1>
+    <section class="simple-section">
+        <h2>คำนำ</h2>
 
-                <!-- ✏️ แก้ข้อความแนะนำตัวสั้น ๆ ตรงนี้ -->
-                <p class="home-description">
-                    ยินดีต้อนรับเข้าสู่ Portfolio ของฉัน
-                    เว็บไซต์ที่รวบรวมตัวตน ความสามารถ
-                    ประสบการณ์ และเรื่องราวต่าง ๆ
-                </p>
+        <p>
+            Portfolio เล่มนี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+            ความสามารถ กิจกรรม และประสบการณ์ที่ได้เรียนรู้
+            ตลอดช่วงเวลาที่ศึกษาในระดับมัธยมศึกษา
+            เพื่อแสดงให้เห็นถึงความตั้งใจและพัฒนาการของฉัน
+        </p>
+    </section>
 
-                <!-- ปุ่มไปหน้า Portfolio -->
-                <a href="portfolio.html" class="main-button">
-                    รู้จักฉัน
-                    <span>→</span>
-                </a>
+    <section class="simple-section">
 
+        <h2>ทักษะและความสามารถ</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <span>01</span>
+                <h3>ภาษาจีน</h3>
+                <p>มีความสนใจและประสบการณ์ในการเรียนภาษาจีน</p>
             </div>
 
+            <div class="skill-card">
+                <span>02</span>
+                <h3>การแสดง</h3>
+                <p>มีประสบการณ์เข้าร่วมกิจกรรมการแสดง</p>
+            </div>
 
-            <!-- =========================
-                 รูปโปรไฟล์วงกลม
-            ========================== -->
-            <div class="profile-area">
+            <div class="skill-card">
+                <span>03</span>
+                <h3>การร้องเพลง</h3>
+                <p>ชื่นชอบการร้องเพลงและเคยเข้าร่วมกิจกรรมของโรงเรียน</p>
+            </div>
 
-                <div class="profile-circle">
-
-                    <!-- ✏️ เปลี่ยนชื่อรูปตรงนี้ถ้ารูปชื่ออื่น -->
-                    <img src="images/profile.jpeg"
-                         alt="Pimchanok">
-
-                </div>
-
-                <!-- ตกแต่งวงกลมเล็ก ๆ -->
-                <div class="floating-dot dot-one"></div>
-                <div class="floating-dot dot-two"></div>
-                <div class="floating-dot dot-three"></div>
-
+            <div class="skill-card">
+                <span>04</span>
+                <h3>การทำงานเป็นทีม</h3>
+                <p>สามารถทำงานร่วมกับผู้อื่นและช่วยกันทำกิจกรรม</p>
             </div>
 
         </div>
 
-    </main>
+    </section>
 
+    <div class="page-buttons">
+        <a href="index.html" class="outline-btn">← หน้าแรก</a>
+        <a href="activities.html" class="main-btn">กิจกรรม →</a>
+    </div>
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="home-footer">
-        <p>
-            © 2026 Pimchanok Portfolio
-        </p>
-    </footer>
+</main>
 
+<footer>
+    © 2026 Pimchanok Portfolio
+</footer>
 
 </body>
 </html>
-
-
-
-
-
