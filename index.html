@@ -1,77 +1,289 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พิมพ์ชนก</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f13596;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 50px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
-</head>
-<body>
+<!-- =========================
+     หน้าแรก : Welcome Profile
+========================= -->
+<section id="home" class="home">
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน น.ส.พิมพ์ชนก วรรณบุบผา👋</h1>
-        <p>สวัสดีค่ะ! ฉันชื่อ <strong>พิมพ์ชนก (pimchanok)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese </p>
-        <p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
-        <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของผม</a>
+    <!-- ของตกแต่ง -->
+    <div class="decor decor-top">♡ 🐒 ♡ 🩷 ♡ 🐒 ♡</div>
+
+    <div class="home-container">
+
+        <!-- รูปโปรไฟล์ -->
+        <div class="profile-frame">
+            <img src="profile.jpg" alt="รูปโปรไฟล์ของฉัน">
+        </div>
+
+        <!-- ข้อความต้อนรับ -->
+        <div class="home-text">
+            <p class="small-title">🌿 WELCOME TO MY PORTFOLIO 🌿</p>
+
+            <h1>
+                ยินดีต้อนรับสู่<br>
+                <span>เว็บไซต์ Portfolio</span><br>
+                ของฉัน 💚
+            </h1>
+
+            <p class="intro">
+                เรามาทำความรู้จักกัน<br>
+                ให้มากขึ้นกันเถอะ! 🐒🩷
+            </p>
+
+            <a href="about.html" class="about-btn">
+                💚 ทำความรู้จักฉัน
+            </a>
+        </div>
+
     </div>
 
-</body>
-</html>
+    <!-- ของตกแต่งด้านล่าง -->
+    <div class="cute-decoration">
+        🩷 ♡ 🐒 ♡ 🌿 ♡ 🩷 ♡ 🐒
+    </div>
 
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>แฟ้มสะสมงานของฉัน น.ส.พิมพ์ชนก วรรณบุบผา</title>
+</section>
+
+
 <style>
-body { font-family: sans-serif; background-color: #f4f7f6; text-align: center; padding: 30px; }
-.container { max-width: 800px; margin: 0 auto; }
-.project-card { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
-.btn { display: inline-block; background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+
+    /* =========================
+       HOME
+    ========================= */
+
+    .home {
+        min-height: 100vh;
+        background: linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5fffa 50%,
+            #dff8ec 100%
+        );
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        overflow: hidden;
+
+        padding: 60px 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* ของตกแต่งด้านบน */
+
+    .decor-top {
+        position: absolute;
+        top: 35px;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+
+        font-size: 25px;
+        letter-spacing: 12px;
+
+        opacity: 0.75;
+    }
+
+
+    /* กล่องหลัก */
+
+    .home-container {
+        width: 90%;
+        max-width: 1000px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 80px;
+
+        background: rgba(255,255,255,0.72);
+
+        padding: 55px;
+
+        border-radius: 35px;
+
+        box-shadow:
+            0 15px 40px rgba(94, 170, 135, 0.15);
+
+        border: 2px solid #d5f1e2;
+
+        backdrop-filter: blur(8px);
+    }
+
+
+    /* รูปโปรไฟล์ */
+
+    .profile-frame {
+        width: 280px;
+        height: 280px;
+
+        border-radius: 50%;
+
+        padding: 10px;
+
+        background: #bcebd4;
+
+        box-shadow:
+            0 10px 25px rgba(80, 150, 115, 0.2);
+
+        flex-shrink: 0;
+    }
+
+    .profile-frame img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        border-radius: 50%;
+
+        border: 7px solid white;
+    }
+
+
+    /* ข้อความ */
+
+    .home-text {
+        text-align: left;
+    }
+
+    .small-title {
+        color: #5aaa86;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 12px;
+    }
+
+    .home-text h1 {
+        color: #315c4b;
+
+        font-size: 42px;
+
+        line-height: 1.35;
+
+        margin: 0 0 20px;
+
+        font-weight: 700;
+    }
+
+    .home-text h1 span {
+        color: #61b98e;
+    }
+
+    .intro {
+        color: #648276;
+
+        font-size: 20px;
+
+        line-height: 1.7;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* ปุ่ม */
+
+    .about-btn {
+        display: inline-block;
+
+        text-decoration: none;
+
+        color: white;
+
+        background: #72c99d;
+
+        padding: 13px 28px;
+
+        border-radius: 30px;
+
+        font-size: 17px;
+
+        font-weight: bold;
+
+        box-shadow:
+            0 7px 15px rgba(76, 163, 117, 0.25);
+
+        transition: 0.3s;
+    }
+
+    .about-btn:hover {
+        background: #54b886;
+
+        transform: translateY(-4px);
+
+        box-shadow:
+            0 10px 20px rgba(76, 163, 117, 0.3);
+    }
+
+
+    /* ของตกแต่งด้านล่าง */
+
+    .cute-decoration {
+        margin-top: 35px;
+
+        font-size: 25px;
+
+        letter-spacing: 8px;
+
+        opacity: 0.8;
+    }
+
+
+    /* =========================
+       มือถือ
+    ========================= */
+
+    @media (max-width: 768px) {
+
+        .home {
+            padding: 80px 15px 40px;
+        }
+
+        .home-container {
+            flex-direction: column;
+
+            gap: 30px;
+
+            padding: 40px 25px;
+
+            text-align: center;
+        }
+
+        .profile-frame {
+            width: 210px;
+            height: 210px;
+        }
+
+        .home-text {
+            text-align: center;
+        }
+
+        .home-text h1 {
+            font-size: 30px;
+        }
+
+        .intro {
+            font-size: 17px;
+        }
+
+        .small-title {
+            font-size: 13px;
+        }
+
+        .decor-top {
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+    }
+
 </style>
-</head>
-<body>
-
-<div class="container">
-<h1>📁 แฟ้มสะสมงาน น.ส.พิมพ์ชนก วรรณบุบผา (Portfolio)</h1>
-<p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
-
-<!-- กล่องผลงานชิ้นที่ 1 -->
-<div class="project-card">
-<h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ</h3>
-<p>รายละเอียดชิ้นงาน: เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง</p>
-</div>
-
-<!-- กล่องผลงานชิ้นที่ 2 -->
-<div class="project-card">
-<h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-<p>รายละเอียดชิ้นงาน: เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
-</div>
-
-<!-- ปุ่มกดกลับหน้าแรก -->
-<a href="index.html" class="btn">🔙 กลับหน้าแรก</a>
-  <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของผม</a>
-</div>
-
-</body>
-</html>
